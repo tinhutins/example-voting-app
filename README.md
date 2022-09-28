@@ -7,7 +7,11 @@ Getting started
 
 
 * Build status
-[![Build Status]([http://localhost](https://62db-185-103-218-67.eu.ngrok.io:8080/buildStatus/icon?job=instavote%2Fworker-build)]([http://localhost](https://62db-185-103-218-67.eu.ngrok.io:8080/job/instavote/job/worker-build/)
+[![Build Status](https://62db-185-103-218-67.eu.ngrok.io/buildStatus/icon?job=instavote%2Fworker-build)](https://62db-185-103-218-67.eu.ngrok.io/job/instavote/job/worker-build/)
+
+* another status
+
+https://62db-185-103-218-67.eu.ngrok.io/buildStatus/text?job=instavote%2Fworker-build
 
 
 

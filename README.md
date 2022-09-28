@@ -1,4 +1,4 @@
-
+this is a sample app.
 Example Voting App
 =========
 

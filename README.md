@@ -11,7 +11,7 @@ Getting started
 
 * another status
 
-https://62db-185-103-218-67.eu.ngrok.io/buildStatus/text?job=instavote%2Fworker-build
+(https://62db-185-103-218-67.eu.ngrok.io/buildStatus/text?job=instavote%2Fworker-build)
 
 
 

@@ -11,13 +11,14 @@ class VoteUnitTest(unittest.TestCase):
         self.app.testing = True
 
 
+    
     def test_home_status_code(self):
         """Assert that the home page loads successfully"""
         result = self.app.get('/')
         self.assertEqual(result.status_code, 200)
 
     def test_version_is_set(self):
-        """Assert that version is set"""
+        """Asserrt that version is set"""
         result = self.app.get('/')
         assert 'Version' in str(result.data)
 

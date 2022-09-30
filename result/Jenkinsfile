@@ -10,7 +10,7 @@ pipeline {
               changeset "**/result/**"
 	    }
             steps {
-                echo 'compiling result app'
+                echo 'compiling result app!!'
 		dir ('result'){
                 sh ' npm install'
 		}

@@ -5,10 +5,10 @@ pipeline {
     stages {
         stage('build') {
             when {
-              changeset "**/vote/**"
+              changeset "*/vote/**"
 	    }
             steps {
-                echo 'compiling vote app'
+                echo 'compiling vote app!!'
 		dir ('vote'){
                 sh 'pip install -r requirements.txt '
 		}
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('test') {
             when {
-              changeset "**/vote/**"
+              changeset "*/vote/**"
 	    }
             steps {
                 echo 'Running unit tests on vote app'

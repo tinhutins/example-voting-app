@@ -11,7 +11,9 @@ class VoteUnitTest(unittest.TestCase):
         self.app.testing = True
 
 
-    
+
+
+
 
     def test_home_status_code(self):
         """Assert that the home page loads successfully"""

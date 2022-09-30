@@ -1,14 +1,12 @@
 pipeline {
-    agent any
-    
-    tools {
-     maven "Maven 3.8.6"
+    agent {
+        docker {
+        image 'maven:3.8.1-adoptopenjdk-11'
+        args  '-v $HOME/.m2:/root/.m2'
     }
+   }
     stages {
         stage('build') {
-            when {
-              changeset "**/worker/**"
-	    }
             steps {
                 echo 'compiling worker app!'
 		dir ('worker'){
@@ -16,10 +14,7 @@ pipeline {
 		}
             }
         }
-        stage('test') {
-            when {
-              changeset "**/worker/**"
-	    }
+        stage('test'){
             steps {
                 echo 'Running unit tests'
                 dir ('worker'){
@@ -30,7 +25,6 @@ pipeline {
         stage('package') {
             when {
 	      branch 'master'
-              changeset "**/worker/**"
 	    }
             steps {
                 echo 'Packaging worker app'

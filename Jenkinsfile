@@ -10,7 +10,7 @@ pipeline {
               changeset "**/worker/**"
 	    }
             steps {
-                echo 'compiling worker app'
+                echo 'compiling worker app!'
 		dir ('worker'){
                 sh ' mvn compile'
 		}
